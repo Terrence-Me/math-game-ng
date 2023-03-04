@@ -15,7 +15,7 @@ export class EquationComponent {
       b: new FormControl(this.randomNumber()),
       answer: new FormControl(''),
     },
-    [MathValidators.addition]
+    [MathValidators.addition('answer', 'a', 'b')]
   );
 
   get a() {
